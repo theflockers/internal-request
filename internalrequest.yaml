@@ -1,0 +1,16 @@
+kubectl create -f - <<EOF
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: InternalRequest
+metadata:
+  name: "myrequest"
+spec:
+  pipeline: 
+    pipelineRef:
+      resolver: "cluster"
+      params:
+        - name: "name"
+          value: "sample"
+  params:
+    foo: bar
+    baz: qux
+EOF
