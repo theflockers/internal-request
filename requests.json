@@ -1,0 +1,120 @@
+{
+  "items": [
+    {
+      "generateName": "internalrequest",
+      "labels": [
+        { "internal-services.appstudio.openshift.io/pipelinerun-uid": "id-1" },
+        { "internal-services.appstudio.openshift.io/something": "else" }
+      ],
+      "params": {
+         "dogName": "rex"
+      },
+      "pipeline": {
+        "pipelineRef": {
+          "resolver": "git",
+          "params": [
+            { "name": "url", "value": "https://github.com/theflockers/test-pipeline.git" },
+            { "name": "revision", "value": "main" },
+            { "name": "pathInRepo", "value": "test-pipeline.yaml" }
+          ]
+        }
+      },
+      "timeouts": {
+        "pipeline": "1h00m00s",
+        "task": "0h50m00s"
+      }
+    },
+    {
+      "generateName": "internalrequest",
+      "labels": [
+        { "internal-services.appstudio.openshift.io/pipelinerun-uid": "id-2" }
+      ],
+      "params": { 
+         "dogName": "rex"
+      },
+      "pipeline": {
+        "pipelineRef": {
+          "resolver": "git",
+          "params": [
+            { "name": "url", "value": "https://github.com/theflockers/test-pipeline.git" },
+            { "name": "revision", "value": "main" },
+            { "name": "pathInRepo", "value": "test-pipeline-no-params.yaml" }
+          ]
+        }
+      },
+      "timeouts": {
+        "pipeline": "1h00m00s",
+        "task": "0h50m00s"
+      }
+    },
+    {
+      "generateName": "internalrequest",
+      "labels": [
+        { "internal-services.appstudio.openshift.io/pipelinerun-uid": "id-3" }
+      ],
+      "params": { 
+         "dogName": "rex"
+      },
+      "pipeline": {
+        "pipelineRef": {
+          "resolver": "git",
+          "params": [
+            { "name": "url", "value": "https://github.com/theflockers/test-pipeline.git" },
+            { "name": "revision", "value": "main" },
+            { "name": "pathInRepo", "value": "test-pipeline-no-params.yaml" }
+          ]
+        }
+      },
+      "timeouts": {
+        "pipeline": "1h00m00s",
+        "task": "0h50m00s"
+      }
+    },
+    {
+      "generateName": "internalrequest",
+      "labels": [
+        { "internal-services.appstudio.openshift.io/pipelinerun-uid": "id-4" }
+      ],
+      "params": { 
+         "dogName": "rex"
+      },
+      "pipeline": {
+        "pipelineRef": {
+          "resolver": "git",
+          "params": [
+            { "name": "url", "value": "https://github.com/theflockers/test-pipeline.git" },
+            { "name": "revision", "value": "main" },
+            { "name": "pathInRepo", "value": "test-pipeline-no-params.yaml" }
+          ]
+        }
+      },
+      "timeouts": {
+        "pipeline": "1h00m00s",
+        "task": "0h50m00s"
+      }
+    },
+    {
+      "generateName": "internalrequest",
+      "labels": [
+        { "internal-services.appstudio.openshift.io/pipelinerun-uid": "id-4" }
+      ],
+      "params": { 
+         "dogName": "rex"
+      },
+      "pipeline": {
+        "pipelineRef": {
+          "resolver": "git",
+          "params": [
+            { "name": "url", "value": "https://github.com/theflockers/test-pipeline.git" },
+            { "name": "revision", "value": "main" },
+            { "name": "pathInRepo", "value": "test-pipeline-no-params.yaml" }
+          ]
+        }
+      },
+      "timeouts": {
+        "pipeline": "1h00m00s",
+        "task": "0h50m00s"
+      }
+    }
+  ]
+}
